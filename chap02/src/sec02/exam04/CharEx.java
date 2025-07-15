@@ -52,14 +52,26 @@ public class CharEx {
 		System.out.println((int) ' ');
 		String str = "";	// 빈 문자열은 가능
 		
-		// 유니코드로 이름 출력하기
-		char s1 = 49569;	
-		char s2 = 51652;	
-		char s3 = 50689;	
+		System.out.println("-------------------------------");
 		
-		System.out.print(s1);
-		System.out.print(s2);
-		System.out.print(s3);
+		// 유니코드로 이름 출력하기
+		
+		char s1 = '송';
+        char s2 = '진';
+        char s3 = '영';
+
+        System.out.println((int) s1); 
+        System.out.println((int) s2); 
+        System.out.println((int) s3);
+		
+		char u1 = 49569;	// 송
+		char u2 = 51652;	// 진
+		char u3 = 50689;	// 영
+		
+		System.out.print(u1);
+		System.out.print(u2);
+		System.out.println(u3);
+		
 		
 	}
 
