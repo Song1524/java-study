@@ -10,3 +10,6 @@ public class RunStatementExample {
 		System.out.println(result);	// result 출력
 	}
 }
+
+
+// git commit Test
