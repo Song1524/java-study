@@ -60,9 +60,9 @@ public class CharEx {
         char s2 = '진';
         char s3 = '영';
 
-        System.out.println((int) s1); 
-        System.out.println((int) s2); 
-        System.out.println((int) s3);
+        System.out.println("송: " + (int) s1); 
+        System.out.println("진: " + (int) s2); 
+        System.out.println("영: " + (int) s3);
 		
 		char u1 = 49569;	// 송
 		char u2 = 51652;	// 진
