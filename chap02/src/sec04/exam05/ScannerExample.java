@@ -26,11 +26,11 @@ public class ScannerExample {
 //		10 20 => 10,20
 		
 		// Scanner 클래스는 사용자의 입력을 다양한 타입으로 자동 변환해주는 편리한 기능을 제공
-		int a = sc.nextInt();
-		int b = sc.nextInt();
-		
-		System.out.println(a + "," + b);
-		System.out.println("퀴즈 종료\n");
+//		int a = sc.nextInt();
+//		int b = sc.nextInt();
+//		
+//		System.out.println(a + "," + b);
+//		System.out.println("퀴즈 종료\n");
 		
 		// 주의!
 		// nextInt()나 next()는 입력 후 개행 문자(\n)를 버퍼에 남김
@@ -40,6 +40,8 @@ public class ScannerExample {
 		int age = sc.nextInt(); // 25 입력 + 엔터
 		sc.nextLine(); // 버퍼 비우기 (중요!)
 		String name = sc.nextLine(); // 정상 입력 가능
+		
+		System.out.println("age: " + age);
 		System.out.println("name: " + name);
 	}
 

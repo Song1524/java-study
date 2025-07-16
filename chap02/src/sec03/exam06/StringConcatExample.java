@@ -17,6 +17,11 @@ public class StringConcatExample {
 				
 		String str4 = "10" + (2 + 8); // ()는 최우선 연산, "10" + 10 -> "1010"
 		System.out.println("str4: " + str4);
+		
+		
+		// Test
+		String str5 = 1 + "2" + 3 * 4; // 
+		System.out.println("str5: " + str5.getClass().getName());
 	}
 
 }

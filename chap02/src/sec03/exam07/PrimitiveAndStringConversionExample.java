@@ -12,6 +12,17 @@ public class PrimitiveAndStringConversionExample {
 		System.out.println("value2: " + value2);
 		System.out.println("value3: " + value3);
 		
+		// 타입 확인하기
+		Integer value4 = Integer.parseInt("10");
+		Double value5 = Double.parseDouble("3.14");
+		Boolean value6 = Boolean.parseBoolean("true");
+		
+		System.out.println("value1: " + value1 + " / 타입: " + value4.getClass().getName());
+		System.out.println("value2: " + value2 + " / 타입: " + value5.getClass().getName());
+		System.out.println("value3: " + value3 + " / 타입: " + value6.getClass().getName());
+
+
+		
 //		System.out.println(Integer.parseInt("1a")); // 숫자로 변환 불가한 경우 예외 발생
 //		System.out.println(Byte.parseByte("128")); // byte 값의 범위를 벗어남
 		

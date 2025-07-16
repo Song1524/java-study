@@ -19,3 +19,4 @@ public class QStopExample {
 	}
 
 }
+// 113 감지되자마자 break해서 13, 10은 사용되기도 전에 프로그램이 끝남

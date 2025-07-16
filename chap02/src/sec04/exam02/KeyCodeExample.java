@@ -17,3 +17,12 @@ public class KeyCodeExample {
 	}
 
 }
+
+
+/*
+ * 사용자가 키보드에 A 입력 후 Enter를 누르면:
+A 입력 			→ 	keyCode: 65
+\r (캐리지 리턴) 	→ 	keyCode: 13
+\n (줄바꿈) 		→	keyCode: 10
+ */
+
