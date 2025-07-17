@@ -12,13 +12,11 @@ public class Hw5 {
 		
 		char num = resident.charAt(7);
 		
-		String str = (num == 1 || num == 3) ? "남자" : "여자";
+		String str = (num == '1' || num == '3') ? "남자" : (num == '2' || num == '4') ? "여자" : "잘못된 입력입니다.";
+
 		
 		System.out.println(str);
 						
 	}
 
 }
-
-
-// 1 || 3 이면 남자, 아니면 여자
