@@ -1,5 +1,8 @@
 package sec02.exam08;
 
+import java.nio.channels.ScatteringByteChannel;
+import java.util.Scanner;
+
 public class BreakEx {
 
 	public static void main(String[] args) {
@@ -21,7 +24,23 @@ public class BreakEx {
 //		[출력]
 //		45까지의 합: 1035
 		
+		Scanner sc = new Scanner(System.in);
 		
+		int sum = 0;   // 누적 합
+        int n = 1;     // 시작 수
+
+        while (true) {
+            sum += n;
+
+            if (sum > 1000) {
+                break;
+            }
+
+            n++;
+        }
+
+        System.out.println(n + "까지의 합: " + sum); 
+
 	}
 
 }

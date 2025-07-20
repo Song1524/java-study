@@ -1,5 +1,7 @@
 package sec02.exam10;
 
+import java.util.Scanner;
+
 public class ContinueEx {
 
 	public static void main(String[] args) {
@@ -27,6 +29,24 @@ public class ContinueEx {
 //		[출력]
 //		영희야생일축하해!
 		
+		 Scanner sc = new Scanner(System.in);
+	     System.out.print("입력: ");
+	     String input = sc.nextLine();
+
+	     String result = "";
+
+	     for (int i = 0; i < input.length(); i++) {
+	         char ch = input.charAt(i);
+
+	         if (ch == ' ') {
+	             continue; 
+	         }
+
+	         result += ch;
+	     }
+
+	     System.out.println("출력: " + result);
+		// 어렵네;;
 	}
 
 }
