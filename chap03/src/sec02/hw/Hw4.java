@@ -22,7 +22,7 @@ public class Hw4 {
 		int avg = total / 3;
 		System.out.println("평균: "  + avg);
 		
-		String grade = (avg >= 90) ? "휴대폰 교체 가능" : "휴대폰 교체 불가능";
+		String grade = (korean >= 60 && math >= 60 && english >= 60 && avg >= 90) ? "휴대폰 교체 가능" : "휴대폰 교체 불가능";
 		
 		System.out.println(grade);
 

@@ -1,6 +1,5 @@
 package sec02.exam08;
 
-import java.nio.channels.ScatteringByteChannel;
 import java.util.Scanner;
 
 public class BreakEx {

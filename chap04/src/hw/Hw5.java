@@ -7,7 +7,7 @@ public class Hw5 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("1. 스쿼트\n2.데드리프트\n3.벤치 프레스\n4.풀업\n5.종료");
+		System.out.println("1.스쿼트\n2.데드리프트\n3.벤치 프레스\n4.풀업\n5.종료");
 		int num = sc.nextInt();
 		
 		if (num == 1) {

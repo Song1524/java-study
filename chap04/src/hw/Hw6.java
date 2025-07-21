@@ -47,6 +47,8 @@ public class Hw6 {
 			System.out.println("불합격입니다.");
 		}
 		
+		System.out.println("평균 점수: " + avg);
+		
 	}
 
 }

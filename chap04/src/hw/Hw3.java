@@ -23,6 +23,13 @@ public class Hw3 {
 		} else if (num3 < num1 && num3 < num2) {
 			System.out.println("세 수 중에서 가장 작은 수는 " + num3 + "입니다.");
 		}
+		
+		// int min = num1;
+		// if (min > num2) min = num2;
+		// if (min > num3) min = num3;
+		
+		// System.out.println("가장 작은 수는" + min + "입니다.");
+		
 	}
 
 }
