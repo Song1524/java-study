@@ -1,0 +1,9 @@
+package hw;
+
+public class Hw4 {
+
+	public static void main(String[] args) {
+
+	}
+
+}
