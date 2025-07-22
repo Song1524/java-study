@@ -1,0 +1,9 @@
+package hw.array;
+
+public class Hw4 {
+
+	public static void main(String[] args) {
+
+	}
+
+}
