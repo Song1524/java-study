@@ -21,13 +21,14 @@ public class Hw3 {
 		
 		int[] arr = new int[num];
 		int mid = num / 2;
+		int v = 0;
 		
-		for (int i = 0; i < mid ; i++) {
-			arr[i]++;
+		for (int i = 0; i <= mid ; i++) {
+			arr[i] = ++v;
 		}
 		
 		for (int i = mid + 1; i < num ; i++) {
-			arr[i]--;
+			arr[i] = --v;
 		}
 		
 		for (int i = 0; i < arr.length; i++) {
