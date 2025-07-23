@@ -31,29 +31,37 @@ public class Homewok {
 	}
 	
 	// 전달된 문자열에 영문자가 있는지 확인하는 결과를 반환하는 메소드 구현
-	public String strCheck(String str) {
-	
-		return str;
+	public boolean strCheck(String str) {
+	    for (int i = 0; i < str.length(); i++) {
+	        char ch = str.charAt(i);
+	        if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {
+	        	System.out.println("영문자가 포함되어 있습니다.");
+	            return true;
+	        }
+	    }
+	    System.out.println("영문자가 포함되어 있지 않습니다.");
+	    return false;
 	}
+
 	
 	// 문자열, 문자를 전달받아 문자열에 문자가 몇개있는지 출력하는 메소드구현
-	public String strCount(String str) {
-		
-		return str;
+	public int strCount(String str, char ch) {
+	    int count = 0;
+	    for (int i = 0; i < str.length(); i++) {
+	        if (str.charAt(i) == ch) count++;
+	    }
+	    System.out.println("'" + ch + "'의 개수: " + count);
+	    return count;
 	}
 	
 	// 전달된 정수의 구구단을 출력하는 메소드 구현
-	public int times(int x) {
-		int i = 0, j = 0;
-		int and = i * j;
-		for(i = 1; i == x;) {
-			System.out.println(x + "단");
-			for (j = 0; j < 9; j++) {
-				System.out.println(i + " x " + j + " = " + and);
-			}
-		}
-		return and;
+	public void timesTable(int x) {
+	    System.out.println(x + "단");
+	    for (int i = 1; i <= 9; i++) {
+	        System.out.println(x + " x " + i + " = " + (x * i));
+	    }
 	}
+
 
 
 }
