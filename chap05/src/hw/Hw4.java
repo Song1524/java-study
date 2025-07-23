@@ -12,7 +12,7 @@ public class Hw4 {
             System.out.println("게임을 실행합니다!");
             System.out.print("게임을 다시 플레이하시겠습니까? (yes/no): ");
             answer = sc.nextLine();
-        } while (answer.equalsIgnoreCase("yes"));
+        } while (answer.equals("yes"));
 
         System.out.println("게임을 종료합니다.");
 	}
