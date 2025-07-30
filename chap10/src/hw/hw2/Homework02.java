@@ -1,4 +1,4 @@
-package sec02.exam06.hw.hw2;
+package hw.hw2;
 
 public class Homework02 {
 

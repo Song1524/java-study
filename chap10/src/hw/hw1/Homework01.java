@@ -1,4 +1,4 @@
-package sec02.exam06.hw.hw1;
+package hw.hw1;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

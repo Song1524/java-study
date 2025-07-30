@@ -1,4 +1,4 @@
-package sec02.exam06.hw.hw3;
+package hw.hw3;
 
 public class CharCheckException extends Exception{
 	CharCheckException() {
