@@ -2,10 +2,7 @@ package hw.hw1.model.vo;
 
 public class Food extends Product{
 	private int expirationDays;
-	
-	public Food() {
-	}
-	
+		
 	public Food(String name, int price, int expirationDays) {
 		super(name, price);
 		this.expirationDays = expirationDays;
