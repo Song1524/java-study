@@ -67,7 +67,7 @@ public class BookController {
     }
 
     public int ascBook(){
-		    // Collections.sort와 Comparable활용
+		// Collections.sort와 Comparable활용
     	Collections.sort(bookList);
     	// 책 이름 기준으로 오름차순 정렬 후 1 반환
     	return 1;
