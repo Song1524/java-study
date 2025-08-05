@@ -106,12 +106,4 @@ public class Employee {
 		this.address = address;
 	}
 	
-	public String Employee() {
-		return empNO + empName + getDept() + getJob() + getAge() + getGender() + 
-			   getSalary() + getBonus() + getPhone() + getAddress();
-		
-//		System.out.println("=== " + empName + " ===");
-	}
-
-	
 }
