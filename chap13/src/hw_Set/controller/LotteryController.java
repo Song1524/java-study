@@ -1,6 +1,9 @@
 package hw_Set.controller;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import hw_Set.model.vo.Lottery;
@@ -43,6 +46,8 @@ public class LotteryController {
 	
 	public Set<Lottery> sortedWinObject(){
 		// 1. 이름을 오름차순으로 정렬
+		List<Lottery> winer = new ArrayList<Lottery>();
+		Collections.sort(winer);
 		// 이름이 같으면 번호로 오름차순 정렬
 		// 정렬의 결과를 반환
 		// 이때, 미리 만들어진 win을 가지고 정렬
