@@ -14,7 +14,7 @@ public class LotteryController {
 	public boolean insertObject(Lottery l) {
 		// 1. 전달 받은 l을 lottery HashSet에 추가
 		// 2. 추가 결과를 boolean 값으로 반환
-		return lottery.add(1);
+		return lottery.add(l);
 	}
 	
 	public boolean deleteObject(Lottery l) {
