@@ -55,9 +55,10 @@ public class Lottery implements Comparable<Lottery> {
 
 	@Override
 	public int compareTo(Lottery other) {
-		if (this.name < other.name) return -1;
-		else if (this.name > other.name) return 1;
-		else if (this.name.equals(other.name)) return -1;
-		else return 0;
+		if (this.name.equals(other.name)) {
+			return this.phone.compareTo(other.phone);
+		} else {
+			return this.name.compareTo(other.name);
+		}
 	}
 }
