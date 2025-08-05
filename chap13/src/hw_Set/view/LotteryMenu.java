@@ -31,8 +31,7 @@ public class LotteryMenu {
 			sc.nextLine();
 			
 			switch (inputNum) {
-				case 1: 
-				controller.insertObject(); break;
+				case 1: controller.insertObject(); break;
 				case 2: controller.deleteObject(); break;
 				case 3: controller.searchObject(); break;
 				case 4: controller.winObject(); break;
