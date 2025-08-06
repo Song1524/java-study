@@ -81,14 +81,13 @@ public class LotteryMenu {
 		System.out.println("===== 2. 추첨 대상 삭제 =====");
 		// 1. 삭제할 대상의 이름과 휴대폰 번호 입력 받음
 		System.out.println("삭제할 대상의 이름과 핸드폰 번호를 입력하세요.");
-		System.out.println("이름 : ");
+		System.out.print("이름 : ");
 		String name = sc.nextLine();
-		System.out.println("핸드폰 번호('-'빼고) : ");
+		System.out.print("핸드폰 번호('-'빼고) : ");
 		String phone = sc.nextLine();
 		// 2. 매개변수 있는 Lottery 생성자를 이용해 객체 구성
 		Lottery lot = new Lottery(name, phone);
 		// 3. lc에 있는 deleteObject에 전달
-		lc.deleteObject(lot);
 		// 4. 전달받은 값 true면 "삭제 완료되었습니다."
 		if (lc.deleteObject(lot)) {
 			System.out.println("삭제 완료되었습니다.");
@@ -146,7 +145,7 @@ public class LotteryMenu {
 		// 3. 정보 담긴 객체를 lc의 searchWinner에 보내기
         if (lc.searchWinner(lot)) {
         	// 4. 받은 결과가 true면 "축하합니다. 당첨 목록에 존재합니다."
-        	System.err.println("축하합니다. 당첨 목록에 존재합니다.");
+        	System.out.println("축하합니다. 당첨 목록에 존재합니다.");
         } else {
         	// 5. false면 "다음 기회에!" 출력 
         	System.out.println("다음 기회에!");
