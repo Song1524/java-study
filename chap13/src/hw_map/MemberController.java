@@ -14,6 +14,7 @@ public class MemberController {
 		// 2. 이미 있다면 false 값 반환
 		if (!map.containsKey(id)) {
 			map.put(id, m);
+			return true;
 		} return false;
 	}
 	
