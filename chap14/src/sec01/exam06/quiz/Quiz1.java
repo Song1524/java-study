@@ -23,22 +23,32 @@ public class Quiz1 {
 	public static void main(String[] args) {
 		
 		try (InputStream is = new FileInputStream("C:/Temp/애국가1.dat")) {
-			byte[] song = new byte[300];
+			byte[] song = new byte[500];
+
+			int read = is.read(song);
 			
-			while (true) {
-				int read = is.read(song);
-			
-				if (read == -1) break;
-				
-				for (int i = 0; i < read; i++) {
-					System.out.println(song[i]);
-				}
+			if (read != -1) {
+				String text = new String(song, 0, read, "UTF-8");
+				System.out.println(text);
 			}
+			
+//			int bytesRead;
+//			while ((bytesRead = is.read(song)) != -1) {
+//				// 읽은 바이트 배열을 문자열로 변환
+//				String str = new String(song, 0, bytesRead, "UTF-8");
+//				// 인덱스 0부터 정확히 읽은 문자 수만큼 문자열로 만듦
+//				
+//				System.out.println(str);
+//			}
 			
 			is.close();			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
+		// 이렇게 바이트를 가지고 직접 읽고 수동으로 디코딩 하는 방법은
+		// 가능은 하지만 인코딩 경계문제(멀티바이트 문자 잘림 등)가 있어서 복잡하고 위험 부담이 큼
+		// => 문자 기반 스트림 사용
 		
 	}
 
