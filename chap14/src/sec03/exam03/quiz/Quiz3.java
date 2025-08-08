@@ -1,5 +1,9 @@
 package sec03.exam03.quiz;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
+
 public class Quiz3 {
 //	Quiz
 //	현재 폴더의 하위 data 폴더에 저장된 img_avatar.png 파일을 1000 바이트를 읽은 뒤, 
@@ -11,8 +15,21 @@ public class Quiz3 {
 //	getResource().getPath(): 현재 클래스가 있는 위치에서 파일을 찾아 절대 경로로 반환하는 메소드
 //	파일 입력 스트림 객체 생성 시 생성자의 매개값으로 File 객체 전달 가능
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
+		byte[] img = new byte[1024];
 		
+		String path = Quiz3.class.getResource("data/img_avatar.png").getPath();
+		
+		File file = new File(path);
+		
+		InputStream is = new FileInputStream(file);
+		int readBytes = is.read(img);
+		int totalSize = (int) file.length();
+		int result = totalSize - readBytes;
+
+	    System.out.println(result);
+
+	    is.close();
 	}
 
 }

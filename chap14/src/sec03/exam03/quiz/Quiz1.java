@@ -1,5 +1,8 @@
 package sec03.exam03.quiz;
 
+import java.io.File;
+import java.time.LocalDate;
+
 public class Quiz1 {
 //	Quiz
 //	C 드라이브 아래에 test/sub 폴더를 생성하는데
@@ -18,8 +21,29 @@ public class Quiz1 {
 //	이미 존재하는 폴더
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		LocalDate toDay = LocalDate.now();
+		
+		int year = toDay.getYear();
+		int month = toDay.getMonthValue();
+		int day = toDay.getDayOfMonth();
+		
+		String dayFile = String.format("C:/test/sub/%d/%02d/%02d", year, month, day);
+		
+		File dir = new File(dayFile);
+		
+		try {
+			if (!dir.exists()) {
+				dir.mkdirs();
+				System.out.println("폴더 생성 성공");
+			} else if (dir.exists()) {
+				System.out.println("이미 존재하는 폴더");
+			}
+		} catch (Exception e) {
+			System.out.println("폴더 생성 실패");
+			e.printStackTrace();
+		}
+		
+		System.out.println(dir);
 	}
 
 }
