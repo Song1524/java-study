@@ -15,9 +15,9 @@ public class Quiz1 {
 		try (Reader reader = new FileReader("C:/Temp/output.txt")) {
 			
 			while (true) { 
-				int read = reader.read();
+				int read; 
 				
-				if (read != -1) {
+				if ((read = reader.read()) != -1) {
 					System.out.print((char) read);					
 				}
 			}

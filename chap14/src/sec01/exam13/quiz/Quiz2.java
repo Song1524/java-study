@@ -13,14 +13,16 @@ public class Quiz2 {
 //	힌트: Reader를 사용해 원본 파일에서 읽어온 데이터를 Writer를 사용해 타겟 파일로 바로 출력
 	
 	public static void main(String[] args) {
-		try (Reader reader = new FileReader("C:/Temp/test.txt")) {
+		try (Reader reader = new FileReader("C:/Temp/test.txt");
+			 Writer copy = new FileWriter("C:/Temp/test_copy.txt");) {
 			
-			int read = reader.read();
+			int data;
 			
-			Writer copy = new FileWriter("C:/Temp/test_copy.txt");
+			while ((data = reader.read()) != -1) {
+				copy.write(data);
+			}
 			
-			copy.write(read);
-			
+			copy.flush();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
